@@ -1,5 +1,6 @@
 {
   "plugins": ["jsdoc", "prefer-arrow", "sonarjs"],
+
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "sourceType": "script"
@@ -40,6 +41,7 @@
     "plugin:sonarjs/recommended"
   ],
   "rules": {
+    "indent": ["error", 4],
     "no-var": 1,
     "prefer-const": 1,
     "no-extra-parens": 1,
@@ -75,9 +77,11 @@
         "selector": "ForOfStatement"
       }
     ],
-    "camelcase": ["error", { "properties": "never" }],
+    "camelcase": [2, { "properties": "never" }],
 
-    "prefer-arrow/prefer-arrow-functions": "warn",
+    "prefer-arrow/prefer-arrow-functions": ["warn"],
+
+    "sonarjs/prefer-immediate-return": 0,
 
     "jsdoc/check-alignment": 1,
     "jsdoc/check-indentation": 1,
