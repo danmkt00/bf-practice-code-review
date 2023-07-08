@@ -76,11 +76,9 @@
         "selector": "ForOfStatement"
       }
     ],
-    "camelcase": [2, { "properties": "never" }],
+    "camelcase": ["error", { "properties": "never" }],
 
-    "prefer-arrow/prefer-arrow-functions": ["warn"],
-
-    "sonarjs/prefer-immediate-return": 0,
+    "prefer-arrow/prefer-arrow-functions": "warn",
 
     "jsdoc/check-alignment": 1,
     "jsdoc/check-indentation": 1,
