@@ -227,7 +227,7 @@ people. They have built tools to help with all of this.
 ### NPM Scripts
 
 This repository's [package.json](./package.json) has 4 scripts to help write the
-cleanest code you can:
+cleanest code you can :
 
 #### Formatting
 
