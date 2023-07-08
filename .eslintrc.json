@@ -1,6 +1,5 @@
 {
   "plugins": ["jsdoc", "prefer-arrow", "sonarjs", "eslint-plugin-filenames"],
-  "indent": ["error", 4],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "sourceType": "module"
