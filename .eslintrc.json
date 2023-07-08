@@ -1,19 +1,19 @@
 {
-  "plugins": ["jsdoc", "prefer-arrow", "sonarjs", "eslint-plugin-filenames"],
+  "plugins": ["jsdoc", "prefer-arrow", "sonarjs"],
+  "indent": ["error", 4],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "sourceType": "module"
+    "sourceType": "script"
   },
   "env": {
     "browser": false
   },
   "overrides": [
     {
-      "files": ["*.test.js"],
+      "files": ["*.spec.js", "*.test.js"],
       "rules": {
         "no-magic-numbers": 0,
-        "no-undefined": 0,
-        "sonarjs/no-duplicate-string": 0
+        "no-undefined": 0
       },
       "env": {
         "jest": true
@@ -46,8 +46,6 @@
     "no-extra-parens": 1,
     "no-unreachable-loop": 1,
     "eqeqeq": 1,
-    "no-break": 0,
-    "no-continue": 0,
     "no-implicit-coercion": 1,
     "no-implicit-globals": 1,
     "no-lone-blocks": 1,
@@ -68,6 +66,7 @@
     "no-warning-comments": 1,
     "prefer-destructuring": 1,
     "no-nested-ternary": 0,
+    "strict": 0,
     "no-restricted-syntax": [
       0,
       {
@@ -114,15 +113,6 @@
 
     "import/prefer-default-export": 0,
     "import/named": 2,
-    "import/extensions": [1, { "js": "always" }],
-    "filenames/match-regex": [
-      "error",
-      "^[a-z]+(-[a-z]+)*$",
-      {
-        "shouldMatch": true,
-        "conventions": ["kebab-case"],
-        "ignore": ["^.+\\.test\\.js$"]
-      }
-    ]
+    "import/extensions": [1, { "js": "always" }]
   }
 }
