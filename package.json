@@ -8,7 +8,7 @@
     "lint:ls": "ls-lint",
     "lint:md": "markdownlint --ignore node_modules --ignore docs --config ./.markdownlint.jsonc --fix ./ ",
     "spell-check": "cspell  './**'",
-    "test": "jest --silent "
+    "test": "jest --coverage"
   },
   "type": "module",
   "repository": {
