@@ -11,7 +11,7 @@ describe('Creates an array of values that are in the first array, but not not in
         expect(difference([1, 2], [1, 2])).toEqual([]);
     });
     test('Returns empty array when two empty array given', () => {
-        expect(difference([],[])).toEqual([]);
+        expect(difference([], [])).toEqual([]);
     });
     test('Returns empty array when no arrays given', () => {
         expect(difference()).toEqual([]);
