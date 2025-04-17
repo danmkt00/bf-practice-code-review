@@ -7,10 +7,10 @@
 
 const deepFlat = (array = []) => {
     const result = [];
-    for(const item of array){
-        if(Array.isArray(item)){
+    for (const item of array) {
+        if (Array.isArray(item)) {
             result.push(...deepFlat(item));
-        }else{
+        } else {
             result.push(item);
         }
     }
